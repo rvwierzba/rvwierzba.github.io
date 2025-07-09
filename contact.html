@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - RVW Tech</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0; /* Remova margens padrão do body */
+        }
+        #hr-vert{
+            height: 450px;
+            border-right: 1px solid black;
+        }
+        main {
+            flex: 1; /* Permita que o main cresça e preencha o espaço */
+        }
+        #redes-sociais .d-class {
+            display: flex;
+            justify-content: center; /* Centraliza os ícones horizontalmente */
+            gap: 20px; /* Adiciona espaço entre os ícones */
+        }
+
+        #redes-sociais .d-class img {
+            width: 300px; /* Reduz o tamanho das imagens */
+            height: auto;
+       }
+        footer{
+        background-color: #018ADA;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/"><img src="./img/logo.png" width="110" height="110" alt="Logo RVWtech"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.rvwtech.com.br">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./projects.html">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./education.html">Educação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./clients.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contact.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container py-5">
+        <h1 class="text-center mb-4">Contato</h1>
+        <p class="text-center lead">Entre em contato conosco para solicitar um orçamento ou tirar suas dúvidas.</p>
+        <br>
+        <div class="row">
+            <div class="col-md-5">
+                <h3>Formulário de Contato</h3>
+                <form action="./contact/send.py" method="POST">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" placeholder="Telefone">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <hr id="hr-vert" class="mr-7">
+            <div class="col-md-5">
+                <h3>Informações de Contato</h3>
+                <p><strong>Endereço:</strong> Rua Afonso Rogério, 229 - Centro - Piracaia - SP</p>
+                <p><strong>Telefone:</strong> (11) 95079-8396</p>
+                <p><strong>Email:</strong> rafaelwierzba@gmail.com</p>
+                <div style="width: 100%">
+                    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
+                     marginwidth="0"
+                     src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Rua%20Afonso%20Rogério,%20229%20-%20Centro%20-%20Piracaia%20-%20SP+(RVW%20Tech)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+         <hr>
+
+         <div id="redes-sociais" class="mt-4">
+            <h2 class="text-center">Redes sociais</h2>
+            <div class="d-flex">
+                <div class="col-md-6 mr-5"><a href="https://www.facebook.com/rvwtech.com.br" target="_blank"><img src="./img/facebook-btn.png"/></a></div>
+                <div class="col-md-6 ml-5"><a href="https://www.instagram.com/rvwtech.com.br" target="_blank"><img src="./img/instagram-btn.png"/></a></div>
+            </div>
+        </div>
+
+     </main>
+    <footer class="text-center py-3">
+        <p>&copy; 2024 <a href="https://www.rvwtech.com.br" style="color:#fff;">RVW Tech</a>. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
