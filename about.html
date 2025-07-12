@@ -17,11 +17,14 @@
             margin-top: 2rem;
         }
         footer{
-      background-color: #018ADA;
+            background-color: #018ADA;
             color: #fff;
             width: 100%;
             text-align: center;
             padding: 20px 0;
+            position: fixed; /* Ou position: sticky; top: 0; */
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -71,7 +74,9 @@
         </div>
     </main>
     <footer class="text-center py-3">
-        <p>&copy; 2024 <a href="https://www.rvwtech.com.br" style="color:#fff;">RVW Tech</a>. Todos os direitos reservados.</p>
+        <p>
+            &copy; 2024 <a href="https://www.rvwtech.com.br" style="color:#fff;">RVW Tech</a>. Todos os direitos reservados.
+        </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
