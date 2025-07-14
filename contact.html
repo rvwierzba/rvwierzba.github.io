@@ -5,39 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - RVW Tech</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        /* Estilos Gerais */
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            margin: 0; /* Remova margens padrão do body */
+            margin: 0;
+        }
+        main {
+            flex: 1;
         }
         #hr-vert{
             height: 450px;
             border-right: 1px solid black;
         }
-        main {
-            flex: 1; /* Permita que o main cresça e preencha o espaço */
-        }
-        #redes-sociais .d-class {
-            display: flex;
-            justify-content: center; /* Centraliza os ícones horizontalmente */
-            gap: 20px; /* Adiciona espaço entre os ícones */
+        footer{
+            background-color: #018ADA;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
         }
 
-        #redes-sociais .d-class img {
-            width: 300px; /* Reduz o tamanho das imagens */
-            height: auto;
-       }
-        footer{
-        background-color: #018ADA;
-        color: #fff;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0;
-       }
+        /* --- CSS VISUAL DOS BOTÕES (O LAYOUT FOI MOVIDO PARA O HTML) --- */
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        
+        /* Estilos de aparência dos botões */
+        .botao-wrapper button {
+            position: relative;
+            display: block;
+            height: 55px;
+            width: 150px;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+            cursor: pointer;
+            border: none;
+            outline: none;
+            border-radius: 0 5px 5px 0;
+            transition: all 0s ease-out;
+        }
+        .botao-wrapper button:active { top: 3px; }
+        .botao-wrapper button.facebook, .botao-wrapper button.facebook span {
+            background: #3B5999;
+            border-left: 1px solid #2E4476;
+            box-shadow: 0px 5px 0px 0px #2E4476;
+        }
+        .botao-wrapper button.facebook:active { box-shadow: 0px 2px 0px 0px #2E4476; }
+        .botao-wrapper button.instagram, .botao-wrapper button.instagram span {
+            background: #e1306c;
+            border-left: 1px solid #c91d56;
+            box-shadow: 0px 5px 0px 0px #c91d56;
+        }
+        .botao-wrapper button.instagram:active { box-shadow: 0px 2px 0px 0px #c91d56; }
+        .botao-wrapper button span {
+            position: absolute;
+            height: 55px;
+            width: 60px;
+            top: 0;
+            left: -60px;
+            line-height: 55px;
+            font-size: 25px;
+            display: block;
+            font-weight: normal;
+            border-radius: 5px 0 0 5px;
+        }
+        .botao-wrapper button:active span { top: -3px; }
+        .botao-wrapper button.facebook span { border-right: 1px solid #2E4476; }
+        .botao-wrapper button.instagram span { border-right: 1px solid #c91d56; }
+        .botao-wrapper button.facebook:active span { box-shadow: 0px 5px 0px 0px #2E4476, 6px 4px 2px rgba(0,0,0,0.3); }
+        .botao-wrapper button.instagram:active span { box-shadow: 0px 5px 0px 0px #c91d56, 6px 4px 2px rgba(0,0,0,0.3); }
     </style>
 </head>
 <body>
@@ -49,27 +91,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.rvwtech.com.br">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./about.html">Sobre Mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./projects.html">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./education.html">Educação</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./clients.html">Clientes</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./contact.html">Contato</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.rvwtech.com.br">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./projects.html">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./education.html">Educação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./clients.html">Clientes</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./contact.html">Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -82,18 +110,10 @@
             <div class="col-md-5">
                 <h3>Formulário de Contato</h3>
                 <form action="./contact/send.py" method="POST">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nome">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Telefone">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="5" placeholder="Mensagem"></textarea>
-                    </div>
+                    <div class="form-group"><input type="text" class="form-control" placeholder="Nome"></div>
+                    <div class="form-group"><input type="email" class="form-control" placeholder="Email"></div>
+                    <div class="form-group"><input type="tel" class="form-control" placeholder="Telefone"></div>
+                    <div class="form-group"><textarea class="form-control" rows="5" placeholder="Mensagem"></textarea></div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
@@ -103,27 +123,35 @@
                 <p><strong>Endereço:</strong> Rua Afonso Rogério, 229 - Centro - Piracaia - SP</p>
                 <p><strong>Telefone:</strong> (11) 95079-8396</p>
                 <p><strong>Email:</strong> rafaelwierzba@gmail.com</p>
-                <div style="width: 100%">
-                    <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0"
-                     marginwidth="0"
-                     src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=Rua%20Afonso%20Rogério,%20229%20-%20Centro%20-%20Piracaia%20-%20SP+(RVW%20Tech)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                    </iframe>
-                </div>
+                <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&height=300&hl=en&q=Rua%20Afonso%20Rogério,%20229%20-%20Centro%20-%20Piracaia%20-%20SP+(RVW%20Tech)&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe></div>
             </div>
         </div>
-         <hr>
+        <hr>
 
-         <div id="redes-sociais" class="mt-4">
+        <div id="redes-sociais" class="mt-4">
             <h2 class="text-center">Redes sociais</h2>
-            <div class="d-flex">
-                <div class="col-md-6 mr-5"><a href="https://www.facebook.com/rvwtech.com.br" target="_blank" rel="noopener"><img src="./img/facebook-btn.png" alt="Botão para o nosso Facebook"/></a></div>
-                <div class="col-md-6 ml-5"><a href="https://www.instagram.com/rvwtech.com.br" target="_blank" rel="noopener"><img src="./img/instagram-btn.png" alt="Botão para o nosso Instagram"/></a></div>
+
+            <div class="botoes-redes-sociais" style="display: flex; justify-content: center; align-items: center; padding: 20px 0;">
+                
+                <div class="botao-wrapper mr-5">
+                    <button class="facebook" onclick="location.href='https://www.facebook.com/rvwtech.com.br'">
+                        <span><i class="fab fa-facebook-f"></i></span>
+                        Facebook
+                    </button>
+                </div>
+
+                <div class="botao-wrapper ml-15" style="margin-left: 30px;">
+                    <button class="instagram" onclick="location.href='https://www.instagram.com/rvwtech.com.br'">
+                        <span><i class="fab fa-instagram"></i></span>
+                        Instagram
+                    </button>
+                </div>
             </div>
         </div>
 
      </main>
     <footer class="text-center py-3">
-        <p>&copy; 2024 <a href="https://www.rvwtech.com.br" style="color:#fff;">RVW Tech</a>. Todos os direitos reservados.</p>
+        <p>© 2024 <a href="https://www.rvwtech.com.br" style="color:#fff;">RVW Tech</a>. Todos os direitos reservados.</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
