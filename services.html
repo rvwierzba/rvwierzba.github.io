@@ -32,7 +32,34 @@
         .btn-primary:hover {
             background-color: #0069d9;
             border-color: #0069d9;
+        } /* --- Botões Sociais --- */
+        .social-buttons {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 1050;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
+        .social-buttons a {
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 30px; color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease-in-out; opacity: 0.9;
+        }
+        .social-buttons a:hover {
+            transform: translateY(-3px); box-shadow: 0 6px 12px rgba(0,0,0,0.2); opacity: 1;
+        }
+        .whatsapp-btn { background-color: #25D366; }
+        .instagram-btn { background: #e1306c; }
+
+        @media (max-width: 767px) {
+            .nav-tabs { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; }
+            .nav-tabs .nav-item { flex-shrink: 0; }
+            .social-buttons { bottom: 20px; right: 20px; }
+        }
+
         footer{
             background-color: #018ADA;
             color: #fff;
@@ -113,6 +140,10 @@
             </div>
         </div>
     </main>
+    <div class="social-buttons">
+	    <a href="https://api.whatsapp.com/send?phone=5511950798396&text=Olá,%20Rafa!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" class="whatsapp-btn" title="Contato via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </div>
     <footer class="text-center py-3">
         <p>&copy; 2024 <a href="https://www.rvwtech.com.br" style="color:#fff;">RVW Tech</a>. Todos os direitos reservados.</p>
     </footer>
