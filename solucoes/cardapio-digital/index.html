@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio Digital - Demo RVW Tech</title>
+    <title>Cardápio Digital - Demo Interativa | RVW Tech</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
         body { 
             padding-top: 20px;
             padding-bottom: 20px;
-            background-color: #f8f9fa; /* Um cinza claro de fundo */
+            background-color: #f8f9fa;
         }
         .container {
             max-width: 800px;
         }
         .cta-banner { 
-            background-color: #007bff; /* Azul primário do Bootstrap, pode mudar para o verde do seu logo */
+            background-color: #007bff; /* Cor primária - Adapte para a cor do seu logo se preferir */
             color: white; 
             padding: 15px; 
             text-align: center; 
             margin-bottom: 30px; 
-            border-radius: 5px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .cta-banner a { 
             color: #fff; 
@@ -31,7 +33,7 @@
         }
         .categoria-titulo { 
             margin-top: 40px; 
-            border-bottom: 2px solid #007bff; /* Use a cor principal aqui também */
+            border-bottom: 2px solid #007bff;
             padding-bottom: 10px; 
             font-weight: bold;
         }
@@ -47,24 +49,85 @@
             font-size: 1.2rem;
             font-weight: 500;
         }
+        footer {
+            background-color: #018ADA;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+        .social-buttons {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 1050;
+        }
+        .social-buttons a {
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 30px; color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: all 0.3s ease-in-out;
+        }
+        .social-buttons a:hover {
+            transform: translateY(-3px);
+        }
+        .whatsapp-btn { background-color: #25D366; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="cta-banner">
-            <p class="mb-0"><strong>Esta é uma demonstração interativa da RVW Tech.</strong></p>
-            <p class="mb-0">Para ter um sistema completo e personalizado para seu negócio, 
-            <a href="https://www.rvwtech.com.br/contact.html" target="_blank">solicite um orçamento!</a></p>
+            <p class="mb-1"><strong>Esta é uma demonstração interativa da RVW Tech.</strong></p>
+            <p class="mb-0">Adicione itens, teste a interface e imagine isso no seu negócio. Para ter um sistema completo e personalizado, <a href="https://www.rvwtech.com.br/contact.html" target="_blank">solicite um orçamento!</a></p>
         </div>
 
-        <h1 class="text-center mb-4">Nosso Cardápio</h1>
+        <h1 class="text-center mb-4">Monte seu Cardápio</h1>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Adicionar Novo Item ao Cardápio</h5>
+                <p class="card-text text-muted small">Os itens adicionados aqui são salvos apenas no seu navegador.</p>
+                <form id="form-novo-item">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome-item">Nome do Prato</label>
+                            <input type="text" class="form-control" id="nome-item" placeholder="Ex: Pizza de Calabresa" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="categoria-item">Categoria</label>
+                            <input type="text" class="form-control" id="categoria-item" placeholder="Ex: Pizzas, Bebidas" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao-item">Descrição do Prato</label>
+                        <input type="text" class="form-control" id="descricao-item" placeholder="Ex: Molho de tomate, queijo e calabresa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preco-item">Preço</label>
+                        <input type="number" class="form-control" id="preco-item" placeholder="Ex: 45.50" step="0.01" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar Item</button>
+                </form>
+            </div>
+        </div>
         
-        <div id="loading" class="text-center">
-            <p>Buscando delícias no nosso menu...</p>
+        <div id="loading" class="text-center mt-5">
+            <p>Carregando modelo de cardápio...</p>
         </div>
         
         <div id="cardapio-container"></div>
     </div>
+
+    <div class="social-buttons">
+        <a href="https://api.whatsapp.com/send?phone=5511950798396&text=Olá,%20Rafa!%20Vim%20pela%20demo%20do%20cardápio%20digital%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="whatsapp-btn" title="Contato via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <footer class="text-center py-3">
+        <p class="mb-0"><a href="https://www.rvwtech.com.br" style="color:#fff;">RVW Tech</a>. &copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
