@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Agendamento - Demo Interativa | RVW Tech</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .container {
+            flex: 1;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            max-width: 800px;
+        }
+        .cta-banner { 
+            background-color: #28a745; /* Verde para diferenciar do cardápio */
+            color: white; 
+            padding: 15px; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-radius: 8px;
+        }
+        .cta-banner a { 
+            color: #fff; 
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #018ADA;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+        .social-buttons {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 1050;
+        }
+        .whatsapp-btn { background-color: #25D366; }
+        .social-buttons a {
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 30px; color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cta-banner">
+            <p class="mb-1"><strong>Esta é uma demonstração de um Sistema de Agendamentos da RVW Tech.</strong></p>
+            <p class="mb-0">Imagine seus clientes agendando horários com você de forma simples e automática. Para ter um sistema completo e personalizado, <a href="https://www.rvwtech.com.br/contact.html" target="_blank">solicite um orçamento!</a></p>
+        </div>
+
+        <h1 class="text-center mb-4">Agenda de Demonstração</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Serviços Oferecidos</h3>
+                <div id="servicos-container">
+                    <p>Carregando serviços...</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Horários Ocupados</h3>
+                <div id="agendamentos-container">
+                    <p>Carregando agenda...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-buttons">
+        <a href="https://api.whatsapp.com/send?phone=5511950798396&text=Olá,%20Rafa!%20Vim%20pela%20demo%20do%20sistema%20de%20agendamento%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="whatsapp-btn" title="Contato via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <footer>
+        <p class="mb-0"><a href="https://www.rvwtech.com.br" style="color:#fff;">RVW Tech</a>. &copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
