@@ -9,50 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #f8f9fa;
-        }
-        .container {
-            flex: 1;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            max-width: 800px;
-        }
-        .cta-banner { 
-            background-color: #28a745; /* Verde para diferenciar do cardápio */
-            color: white; 
-            padding: 15px; 
-            text-align: center; 
-            margin-bottom: 30px; 
-            border-radius: 8px;
-        }
-        .cta-banner a { 
-            color: #fff; 
-            font-weight: bold;
-            text-decoration: underline;
-        }
-        footer {
-            background-color: #018ADA;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            width: 100%;
-        }
-        .social-buttons {
-            position: fixed;
-            bottom: 40px;
-            right: 40px;
-            z-index: 1050;
-        }
+        body { display: flex; flex-direction: column; min-height: 100vh; background-color: #f8f9fa; }
+        .container { flex: 1; padding-top: 20px; padding-bottom: 20px; max-width: 900px; }
+        .cta-banner { background-color: #28a745; color: white; padding: 15px; text-align: center; margin-bottom: 30px; border-radius: 8px; }
+        .cta-banner a { color: #fff; font-weight: bold; text-decoration: underline; }
+        footer { background-color: #018ADA; color: #fff; text-align: center; padding: 20px 0; width: 100%; }
+        .social-buttons { position: fixed; bottom: 40px; right: 40px; z-index: 1050; }
         .whatsapp-btn { background-color: #25D366; }
-        .social-buttons a {
-            width: 60px; height: 60px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 30px; color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-        }
+        .social-buttons a { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
     </style>
 </head>
 <body>
@@ -65,18 +29,45 @@
 
         <h1 class="text-center mb-4">Agenda de Demonstração</h1>
 
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Serviços Oferecidos</h3>
-                <div id="servicos-container">
-                    <p>Carregando serviços...</p>
-                </div>
+        <div class="card mb-5 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Faça um Agendamento (Simulação)</h5>
+                <form id="form-agendamento">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome-cliente">Seu Nome</label>
+                            <input type="text" class="form-control" id="nome-cliente" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email-cliente">Seu Email</label>
+                            <input type="email" class="form-control" id="email-cliente" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="servico-select">Escolha o Serviço</label>
+                            <select id="servico-select" class="form-control" required>
+                                <option value="">Carregando serviços...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="data-hora">Escolha Data e Hora</label>
+                            <input type="datetime-local" class="form-control" id="data-hora" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Agendar Horário</button>
+                    <div id="form-status" class="mt-3"></div>
+                </form>
             </div>
+        </div>
 
-            <div class="col-md-6">
-                <h3>Horários Ocupados</h3>
+        <hr>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h3 class="text-center">Horários Ocupados</h3>
                 <div id="agendamentos-container">
-                    <p>Carregando agenda...</p>
+                    <p class="text-center">Carregando agenda...</p>
                 </div>
             </div>
         </div>
@@ -87,7 +78,7 @@
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
-
+    
     <footer>
         <p class="mb-0"><a href="https://www.rvwtech.com.br" style="color:#fff;">RVW Tech</a>. &copy; 2024 - Todos os direitos reservados.</p>
     </footer>
