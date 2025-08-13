@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital - Demo RVW Tech</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+        body { 
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: #f8f9fa; /* Um cinza claro de fundo */
+        }
+        .container {
+            max-width: 800px;
+        }
+        .cta-banner { 
+            background-color: #007bff; /* Azul primário do Bootstrap, pode mudar para o verde do seu logo */
+            color: white; 
+            padding: 15px; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            border-radius: 5px;
+        }
+        .cta-banner a { 
+            color: #fff; 
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .categoria-titulo { 
+            margin-top: 40px; 
+            border-bottom: 2px solid #007bff; /* Use a cor principal aqui também */
+            padding-bottom: 10px; 
+            font-weight: bold;
+        }
+        .item-cardapio { 
+            background-color: #fff;
+            border: 1px solid #dee2e6; 
+            padding: 20px; 
+            margin-bottom: 15px; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        #loading {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cta-banner">
+            <p class="mb-0"><strong>Esta é uma demonstração interativa da RVW Tech.</strong></p>
+            <p class="mb-0">Para ter um sistema completo e personalizado para seu negócio, 
+            <a href="https://www.rvwtech.com.br/contact.html" target="_blank">solicite um orçamento!</a></p>
+        </div>
+
+        <h1 class="text-center mb-4">Nosso Cardápio</h1>
+        
+        <div id="loading" class="text-center">
+            <p>Buscando delícias no nosso menu...</p>
+        </div>
+        
+        <div id="cardapio-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
