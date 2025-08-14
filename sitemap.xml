@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
   <url>
     <loc>https://www.rvwtech.com.br/index.html</loc>
     <lastmod>2024-07-17</lastmod>
@@ -28,6 +29,7 @@
     <loc>https://www.rvwtech.com.br/services.html</loc>
     <lastmod>2024-07-17</lastmod>
   </url>
+
   <url>
     <loc>https://www.rvwtech.com.br/services/logotipos.html</loc>
     <lastmod>2024-07-17</lastmod>
@@ -48,12 +50,22 @@
     <loc>https://www.rvwtech.com.br/services/sites-blogs.html</loc>
     <lastmod>2024-07-17</lastmod>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.rvwtech.com.br/blog.html</loc>
-    <lastmod>2025-08-13</lastmod>
-  </url>
+    <lastmod>2025-08-14</lastmod> </url>
   <url>
     <loc>https://www.rvwtech.com.br/posts/cardapio-digital-vantagens.html</loc>
-    <lastmod>2025-08-13</lastmod>
-  </url>
+    <lastmod>2025-08-14</lastmod> </url>
+  <url>
+    <loc>https://www.rvwtech.com.br/posts/sistema-agendamento-vantagens.html</loc>
+    <lastmod>2025-08-14</lastmod> </url>
+
+  <url>
+    <loc>https://www.rvwtech.com.br/solucoes/cardapio-digital-demo/index.html</loc>
+    <lastmod>2025-08-14</lastmod> </url>
+  <url>
+    <loc>https://www.rvwtech.com.br/solucoes/agendador-demo/index.html</loc>
+    <lastmod>2025-08-14</lastmod> </url>
+
 </urlset>
