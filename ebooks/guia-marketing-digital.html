@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book: O Guia Essencial do Marketing Digital - RVW Tech</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        .hero-section {
+            background-color: #343a40;
+            color: #fff;
+        }
+        .hero-section .display-4 {
+            font-weight: 700;
+        }
+        .hero-section .lead {
+            font-size: 1.25rem;
+            color: #adb5bd;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #6c757d;
+        }
+        .btn-hotmart {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: #fff;
+        }
+        .btn-kiwify {
+            background-color: #6f42c1;
+            border-color: #6f42c1;
+            color: #fff;
+        }
+        footer {
+            background-color: #018ADA;
+            color: #fff;
+        }
+        .social-buttons {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 1050;
+        }
+        .social-buttons a {
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 30px; color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .whatsapp-btn { background-color: #25D366; }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" width="110" height="110" alt="Logo RVWtech"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../services.html">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../about.html">Sobre Mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../projects.html">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="ebooks.html">E-books <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../contact.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="../ebooks-img/capa_livro_mkt_pmes.png" class="img-fluid rounded shadow-lg" alt="Capa do E-book O Guia Essencial do Marketing Digital" style="max-width: 300px;" onerror="this.onerror=null;this.src='https://placehold.co/600x800/343A40/FFFFFF?text=Capa+Indisponível';">
+                    </div>
+                    <div class="col-md-7 text-center text-md-left mt-4 mt-md-0">
+                        <h1 class="display-4">Pare de perder clientes. Comece a dominar o digital.</h1>
+                        <p class="lead mt-3">Este não é mais um livro teórico. É um manual prático, direto ao ponto, criado para o pequeno e médio empreendedor que precisa de resultados para ontem.</p>
+                        <div class="my-4">
+                            <span class="old-price">De R$ 97,00</span>
+                            <p class="price" style="color: #ffc107;">por apenas R$ 47,00</p>
+                            <p class="font-weight-bold" style="color: #ffc107;">Oferta de Lançamento!</p>
+                        </div>
+                        <a href="#" class="btn btn-hotmart btn-lg mb-2">Comprar na Hotmart</a>
+                        <a href="#" class="btn btn-kiwify btn-lg mb-2">Comprar na Kiwify</a>
+                        <p class="small text-muted mt-2">Compra segura e entrega imediata do seu e-book.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <h2 class="text-center display-5 font-weight-bold mb-5">O que você vai aprender neste Guia?</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-compass fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title font-weight-bold">Parte 1: A Fundação Estratégica</h5>
+                            <p class="card-text">Aprenda a pensar estrategicamente. Defina seu cliente ideal (Persona), mapeie a jornada de compra e estabeleça metas claras.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-bullhorn fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title font-weight-bold">Parte 2: Atração e Engajamento</h5>
+                            <p class="card-text">Descubra como criar conteúdo que atrai e se conectar com seu público nas redes sociais certas, transformando seguidores em fãs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title font-weight-bold">Parte 3: Conversão e Crescimento</h5>
+                            <p class="card-text">Aprenda a transformar visitantes em clientes com SEO, E-mail Marketing, Anúncios Pagos e o poder do WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title font-weight-bold">Parte 4: Análise e Fidelização</h5>
+                            <p class="card-text">Entenda seus resultados com o Google Analytics e aprenda estratégias para fazer seus clientes comprarem de novo e de novo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="social-buttons">
+        <a href="https://api.whatsapp.com/send?phone=5511950798396&text=Olá,%20Rafa!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="whatsapp-btn" title="Contato via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <footer class="text-center py-3">
+        <p class="mb-0"><a href="../index.html" style="color:#fff;">RVW Tech</a>. &copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
