@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-book: WhatsApp que Vende - RVW Tech</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+        .hero-section {
+            background-color: #108a10; 
+            color: #fff;
+        }
+        .hero-section .display-4 {
+            font-weight: 700;
+        }
+        .hero-section .lead {
+            font-size: 1.25rem;
+            color: #e9f5e9;
+        }
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #ced4da;
+        }
+        .btn-hotmart {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: #fff;
+        }
+        .btn-kiwify {
+            background-color: #6f42c1;
+            border-color: #6f42c1;
+            color: #fff;
+        }
+        footer {
+            background-color: #018ADA;
+            color: #fff;
+        }
+        .social-buttons {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            z-index: 1050;
+        }
+        .social-buttons a {
+            width: 60px; height: 60px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 30px; color: #fff; box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .whatsapp-btn { background-color: #25D366; }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" width="110" height="110" alt="Logo RVWtech"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../services.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">Sobre Mim</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../projects.html">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../blog.html">Blog</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="ebooks.html">E-books <span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contact.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-5 text-center">
+                        <img src="../ebooks-img/capa_livro_whatsapp.png" class="img-fluid rounded shadow-lg" alt="Capa do E-book WhatsApp que Vende" style="max-width: 300px;" onerror="this.onerror=null;this.src='https://placehold.co/600x800/108A10/FFFFFF?text=Capa+WhatsApp';">
+                    </div>
+                    <div class="col-md-7 text-center text-md-left mt-4 mt-md-0">
+                        <h1 class="display-4">Transforme Conversas em Clientes.</h1>
+                        <p class="lead mt-3">O Guia Definitivo para Pequenos Negócios que desejam usar o WhatsApp para automatizar o atendimento e vender todos os dias.</p>
+                        <div class="my-4">
+                            <span class="old-price">De R$ 97,00</span>
+                            <p class="price" style="color: #fff;">por apenas R$ 47,00</p>
+                            <p class="font-weight-bold" style="color: #fff;">Oferta de Lançamento!</p>
+                        </div>
+                       
+                        <a href="#" class="btn btn-hotmart btn-lg mb-2">Comprar na Hotmart</a>
+                        <a href="#" class="btn btn-kiwify btn-lg mb-2">Comprar na Kiwify</a>
+                        <p class="small text-light mt-2">Compra segura e entrega imediata do seu e-book.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <h2 class="text-center display-5 font-weight-bold mb-5">O que você vai dominar com este Guia?</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-building fa-3x text-success mb-3"></i>
+                            <h5 class="card-title font-weight-bold">A Base Profissional</h5>
+                            <p class="card-text">Configure seu WhatsApp Business como uma verdadeira ferramenta de vendas, com catálogos que vendem sozinhos e respostas que economizam seu tempo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-users fa-3x text-success mb-3"></i>
+                            <h5 class="card-title font-weight-bold">Atração e Relacionamento</h5>
+                            <p class="card-text">Aprenda a levar clientes qualificados para o seu WhatsApp e a se relacionar com eles de forma eficaz, sem ser um vendedor chato.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-dollar-sign fa-3x text-success mb-3"></i>
+                            <h5 class="card-title font-weight-bold">Scripts de Vendas</h5>
+                            <p class="card-text">Tenha acesso a scripts prontos para abordar clientes, contornar objeções como "está caro" e conduzir a conversa para o fechamento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <i class="fas fa-robot fa-3x text-success mb-3"></i>
+                            <h5 class="card-title font-weight-bold">Automação e Chatbots</h5>
+                            <p class="card-text">Descubra como usar a automação para qualificar clientes e agendar horários 24/7, liberando seu tempo para focar no que realmente importa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+      <div class="social-buttons">
+        <a href="https://api.whatsapp.com/send?phone=5511950798396&text=Olá,%20Rafa!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="whatsapp-btn" title="Contato via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <footer class="text-center py-3">
+        <p class="mb-0"><a href="../index.html" style="color:#fff;">RVW Tech</a>. &copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
