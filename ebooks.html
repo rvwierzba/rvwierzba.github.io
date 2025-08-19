@@ -30,7 +30,7 @@
             transform: translateY(-5px);
         }
         .ebook-card img {
-            max-height: 400px;
+            height: 400px; /* Altura fixa para consistência */
             width: 100%;
             object-fit: cover;
         }
@@ -53,9 +53,6 @@
     </style>
 </head>
 <body>
-    <!-- ====================================================== -->
-    <!-- ==      SEU NAVBAR, COM LINKS ATUALIZADOS           == -->
-    <!-- ====================================================== -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container">
@@ -109,7 +106,19 @@
                 </div>
             </div>
 
-            <!-- E-book Card 2: Placeholder -->
+            <!-- NOVO E-book Card 2: WhatsApp que Vende -->
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 ebook-card">
+                    <img src="./ebooks-img/capa_livro_whatsapp.png" class="card-img-top" alt="Capa do E-book WhatsApp que Vende" onerror="this.onerror=null;this.src='https://placehold.co/600x800/25D366/FFFFFF?text=Capa+WhatsApp';">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title font-weight-bold">WhatsApp que Vende</h5>
+                        <p class="card-text">Transforme seu WhatsApp em uma máquina de vendas. Aprenda a configurar, atrair clientes, usar scripts de vendas e automatizar seu atendimento.</p>
+                        <a href="guia-whatsapp-vendas.html" class="btn btn-success mt-auto">Saiba Mais e Adquirir</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-book Card 3: Placeholder -->
             <div class="col-md-6 col-lg-4 mb-4">
                 <div class="card h-100 ebook-card">
                     <img src="https://placehold.co/600x800/E9ECEF/6C757D?text=Em+Breve" class="card-img-top" alt="Capa de um futuro e-book">
@@ -124,18 +133,12 @@
         </div>
     </main>
 
-    <!-- ====================================================== -->
-    <!-- ==      SEU BOTÃO DE WHATSAPP                       == -->
-    <!-- ====================================================== -->
     <div class="social-buttons">
         <a href="https://api.whatsapp.com/send?phone=5511950798396&text=Olá,%20Rafa!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener" class="whatsapp-btn" title="Contato via WhatsApp">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
 
-    <!-- ====================================================== -->
-    <!-- ==      SEU FOOTER                                  == -->
-    <!-- ====================================================== -->
     <footer class="text-center py-3">
         <p class="mb-0"><a href="../index.html" style="color:#fff;">RVW Tech</a>. &copy; 2024 - Todos os direitos reservados.</p>
     </footer>
