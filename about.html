@@ -45,16 +45,30 @@
             .social-buttons { bottom: 20px; right: 20px; }
         }
 
+        /* --- ALTERAÇÕES AQUI --- */
+
+        /* 1. Adiciona margem inferior ao <main> para descolar do footer fixo */
+        main.container {
+            margin-bottom: 100px; /* Ajuste esse valor se a altura do footer mudar */
+        }
+
+        /* 2. Força a imagem a ser um círculo perfeito */
+        main .img-fluid.rounded-circle {
+            aspect-ratio: 1 / 1;   /* Força a proporção de 1:1 (quadrado) */
+            object-fit: cover;     /* Preenche o espaço sem distorcer, cortando o excesso da imagem */
+        }
+
+        /* --- FIM DAS ALTERAÇÕES --- */
 
         footer{
-           background-color: #018ADA;
+            background-color: #018ADA;
             color: #fff;
         }
     </style>
 </head>
 <body>
     <header>
-       
+        
     </header>
     <main class="container py-5">
         <h1 class="text-center mb-4">Sobre Mim</h1>
